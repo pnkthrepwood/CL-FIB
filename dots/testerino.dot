@@ -1,0 +1,83 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="LIST_FUNCTIONS"];
+  n1 [label="func"];
+  n1 [label="func"];
+  n2 [label="factorial"];
+  n3 [label="PARAMS"];
+  n3 [label="PARAMS"];
+  n4 [label="n"];
+  n5 [label="LIST_INSTR"];
+  n5 [label="LIST_INSTR"];
+  n6 [label="if"];
+  n6 [label="if"];
+  n7 [label="<="];
+  n7 [label="<="];
+  n8 [label="n"];
+  n9 [label="1"];
+  n10 [label="LIST_INSTR"];
+  n10 [label="LIST_INSTR"];
+  n11 [label="return"];
+  n11 [label="return"];
+  n12 [label="1"];
+  n13 [label="return"];
+  n13 [label="return"];
+  n14 [label="*"];
+  n14 [label="*"];
+  n15 [label="n"];
+  n16 [label="FUNCALL"];
+  n16 [label="FUNCALL"];
+  n17 [label="factorial"];
+  n18 [label="ARGLIST"];
+  n18 [label="ARGLIST"];
+  n19 [label="-"];
+  n19 [label="-"];
+  n20 [label="n"];
+  n21 [label="1"];
+  n22 [label="func"];
+  n22 [label="func"];
+  n23 [label="main"];
+  n24 [label="PARAMS"];
+  n25 [label="LIST_INSTR"];
+  n25 [label="LIST_INSTR"];
+  n26 [label=":="];
+  n26 [label=":="];
+  n27 [label="x"];
+  n28 [label="4"];
+
+  n0 -> n1 // "LIST_FUNCTIONS" -> "func"
+  n1 -> n2 // "func" -> "factorial"
+  n1 -> n3 // "func" -> "PARAMS"
+  n3 -> n4 // "PARAMS" -> "n"
+  n1 -> n5 // "func" -> "LIST_INSTR"
+  n5 -> n6 // "LIST_INSTR" -> "if"
+  n6 -> n7 // "if" -> "<="
+  n7 -> n8 // "<=" -> "n"
+  n7 -> n9 // "<=" -> "1"
+  n6 -> n10 // "if" -> "LIST_INSTR"
+  n10 -> n11 // "LIST_INSTR" -> "return"
+  n11 -> n12 // "return" -> "1"
+  n5 -> n13 // "LIST_INSTR" -> "return"
+  n13 -> n14 // "return" -> "*"
+  n14 -> n15 // "*" -> "n"
+  n14 -> n16 // "*" -> "FUNCALL"
+  n16 -> n17 // "FUNCALL" -> "factorial"
+  n16 -> n18 // "FUNCALL" -> "ARGLIST"
+  n18 -> n19 // "ARGLIST" -> "-"
+  n19 -> n20 // "-" -> "n"
+  n19 -> n21 // "-" -> "1"
+  n0 -> n22 // "LIST_FUNCTIONS" -> "func"
+  n22 -> n23 // "func" -> "main"
+  n22 -> n24 // "func" -> "PARAMS"
+  n22 -> n25 // "func" -> "LIST_INSTR"
+  n25 -> n26 // "LIST_INSTR" -> ":="
+  n26 -> n27 // ":=" -> "x"
+  n26 -> n28 // ":=" -> "4"
+
+}

@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/pnkthrepwood/cl/Asl/src/parser/Asl.g 2017-02-21 23:13:16
+// $ANTLR 3.4 /home/pnkthrepwood/cl/Asl/src/parser/Asl.g 2017-02-21 23:26:14
 
 package parser;
 import interp.AslTree;
@@ -1104,7 +1104,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_expr.add(expr26.getTree());
 
             // AST REWRITE
-            // elements: expr, ID
+            // elements: ID, expr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2762,7 +2762,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: ID, expr_list
+            // elements: expr_list, ID
             // token labels: 
             // rule labels: retval
             // token list labels: 

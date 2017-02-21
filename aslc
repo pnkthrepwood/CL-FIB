@@ -1,0 +1,4 @@
+#!/bin/sh
+
+./asl prog/$1.asl -ast dots/$1.dot -dot -noexec
+dot -Tpdf dots/$1.dot -o dots/$1.pdf
