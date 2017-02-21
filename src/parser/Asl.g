@@ -44,6 +44,8 @@ tokens {
     BOOLEAN;    // Boolean atom (for Boolean constants "true" or "false")
     PVALUE;     // Parameter by value in the list of parameters
     PREF;       // Parameter by reference in the list of parameters
+
+	ARR; //Le Array Access
 }
 
 @header {
@@ -97,7 +99,7 @@ instruction
         ;
 
 // Assignment
-assign	:	ID eq=EQUAL expr -> ^(ASSIGN[$eq,":="] ID expr)
+assign	:	ident eq=EQUAL expr -> ^(ASSIGN[$eq,":="] ident expr)
         ;
 
 // if-then-else (else is optional)
@@ -142,12 +144,15 @@ factor  :   (NOT^ | PLUS^ | MINUS^)? atom
 // Atom of the expressions (variables, integer and boolean literals).
 // An atom can also be a function call or another expression
 // in parenthesis
-atom    :   ID 
+atom    :   ident
         |   INT
         |   (b=TRUE | b=FALSE)  -> ^(BOOLEAN[$b,$b.text])
         |   funcall
         |   '('! expr ')'!
         ;
+
+ident : (ID '[' num_expr ']')  -> ^(ARR ID num_expr)
+	  | (ID);
 
 // A function call has a lits of arguments in parenthesis (possibly empty)
 funcall :   ID '(' expr_list? ')' -> ^(FUNCALL ID ^(ARGLIST expr_list?))

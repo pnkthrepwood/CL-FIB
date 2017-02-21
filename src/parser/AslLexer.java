@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/pnkthrepwood/cl/Asl/src/parser/Asl.g 2017-02-21 23:26:14
+// $ANTLR 3.4 /home/pnkthrepwood/cl/Asl/src/parser/Asl.g 2017-02-22 00:32:14
 
 package parser;
 
@@ -11,54 +11,57 @@ import java.util.ArrayList;
 @SuppressWarnings({"all", "warnings", "unchecked"})
 public class AslLexer extends Lexer {
     public static final int EOF=-1;
-    public static final int T__47=47;
     public static final int T__48=48;
     public static final int T__49=49;
     public static final int T__50=50;
     public static final int T__51=51;
+    public static final int T__52=52;
+    public static final int T__53=53;
+    public static final int T__54=54;
     public static final int AND=4;
     public static final int ARGLIST=5;
-    public static final int ASSIGN=6;
-    public static final int BOOLEAN=7;
-    public static final int COMMENT=8;
-    public static final int DIV=9;
-    public static final int DO=10;
-    public static final int ELSE=11;
-    public static final int ENDFUNC=12;
-    public static final int ENDIF=13;
-    public static final int ENDWHILE=14;
-    public static final int EQUAL=15;
-    public static final int ESC_SEQ=16;
-    public static final int FALSE=17;
-    public static final int FUNC=18;
-    public static final int FUNCALL=19;
-    public static final int GE=20;
-    public static final int GT=21;
-    public static final int ID=22;
-    public static final int IF=23;
-    public static final int INT=24;
-    public static final int LE=25;
-    public static final int LIST_FUNCTIONS=26;
-    public static final int LIST_INSTR=27;
-    public static final int LT=28;
-    public static final int MINUS=29;
-    public static final int MOD=30;
-    public static final int MUL=31;
-    public static final int NOT=32;
-    public static final int NOT_EQUAL=33;
-    public static final int OR=34;
-    public static final int PARAMS=35;
-    public static final int PLUS=36;
-    public static final int PREF=37;
-    public static final int PVALUE=38;
-    public static final int READ=39;
-    public static final int RETURN=40;
-    public static final int STRING=41;
-    public static final int THEN=42;
-    public static final int TRUE=43;
-    public static final int WHILE=44;
-    public static final int WRITE=45;
-    public static final int WS=46;
+    public static final int ARR=6;
+    public static final int ASSIGN=7;
+    public static final int BOOLEAN=8;
+    public static final int COMMENT=9;
+    public static final int DIV=10;
+    public static final int DO=11;
+    public static final int ELSE=12;
+    public static final int ENDFUNC=13;
+    public static final int ENDIF=14;
+    public static final int ENDWHILE=15;
+    public static final int EQUAL=16;
+    public static final int ESC_SEQ=17;
+    public static final int FALSE=18;
+    public static final int FUNC=19;
+    public static final int FUNCALL=20;
+    public static final int GE=21;
+    public static final int GT=22;
+    public static final int ID=23;
+    public static final int IF=24;
+    public static final int INT=25;
+    public static final int LE=26;
+    public static final int LIST_FUNCTIONS=27;
+    public static final int LIST_INSTR=28;
+    public static final int LT=29;
+    public static final int MINUS=30;
+    public static final int MOD=31;
+    public static final int MUL=32;
+    public static final int NOT=33;
+    public static final int NOT_EQUAL=34;
+    public static final int OR=35;
+    public static final int PARAMS=36;
+    public static final int PLUS=37;
+    public static final int PREF=38;
+    public static final int PVALUE=39;
+    public static final int READ=40;
+    public static final int RETURN=41;
+    public static final int STRING=42;
+    public static final int THEN=43;
+    public static final int TRUE=44;
+    public static final int WHILE=45;
+    public static final int WRITE=46;
+    public static final int WS=47;
 
     // delegates
     // delegators
@@ -75,36 +78,15 @@ public class AslLexer extends Lexer {
     }
     public String getGrammarFileName() { return "/home/pnkthrepwood/cl/Asl/src/parser/Asl.g"; }
 
-    // $ANTLR start "T__47"
-    public final void mT__47() throws RecognitionException {
-        try {
-            int _type = T__47;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:6:7: ( '&' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:6:9: '&'
-            {
-            match('&'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__47"
-
     // $ANTLR start "T__48"
     public final void mT__48() throws RecognitionException {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:7:7: ( '(' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:7:9: '('
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:6:7: ( '&' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:6:9: '&'
             {
-            match('('); 
+            match('&'); 
 
             }
 
@@ -122,10 +104,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:8:7: ( ')' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:8:9: ')'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:7:7: ( '(' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:7:9: '('
             {
-            match(')'); 
+            match('('); 
 
             }
 
@@ -143,10 +125,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:9:7: ( ',' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:9:9: ','
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:8:7: ( ')' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:8:9: ')'
             {
-            match(','); 
+            match(')'); 
 
             }
 
@@ -164,6 +146,27 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:9:7: ( ',' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:9:9: ','
+            {
+            match(','); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__51"
+
+    // $ANTLR start "T__52"
+    public final void mT__52() throws RecognitionException {
+        try {
+            int _type = T__52;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:10:7: ( ';' )
             // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:10:9: ';'
             {
@@ -178,15 +181,57 @@ public class AslLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "T__51"
+    // $ANTLR end "T__52"
+
+    // $ANTLR start "T__53"
+    public final void mT__53() throws RecognitionException {
+        try {
+            int _type = T__53;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:11:7: ( '[' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:11:9: '['
+            {
+            match('['); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__53"
+
+    // $ANTLR start "T__54"
+    public final void mT__54() throws RecognitionException {
+        try {
+            int _type = T__54;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:12:7: ( ']' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:12:9: ']'
+            {
+            match(']'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__54"
 
     // $ANTLR start "EQUAL"
     public final void mEQUAL() throws RecognitionException {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:161:7: ( '=' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:161:9: '='
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:166:7: ( '=' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:166:9: '='
             {
             match('='); 
 
@@ -206,8 +251,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:162:10: ( '!=' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:162:12: '!='
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:167:10: ( '!=' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:167:12: '!='
             {
             match("!="); 
 
@@ -229,8 +274,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:163:8: ( '<' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:163:10: '<'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:168:8: ( '<' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:168:10: '<'
             {
             match('<'); 
 
@@ -250,8 +295,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:164:8: ( '<=' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:164:10: '<='
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:169:8: ( '<=' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:169:10: '<='
             {
             match("<="); 
 
@@ -273,8 +318,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:165:8: ( '>' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:165:10: '>'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:170:8: ( '>' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:170:10: '>'
             {
             match('>'); 
 
@@ -294,8 +339,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:166:8: ( '>=' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:166:10: '>='
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:171:8: ( '>=' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:171:10: '>='
             {
             match(">="); 
 
@@ -317,8 +362,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:167:6: ( '+' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:167:8: '+'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:172:6: ( '+' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:172:8: '+'
             {
             match('+'); 
 
@@ -338,8 +383,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:168:7: ( '-' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:168:9: '-'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:173:7: ( '-' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:173:9: '-'
             {
             match('-'); 
 
@@ -359,8 +404,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MUL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:169:9: ( '*' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:169:11: '*'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:174:9: ( '*' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:174:11: '*'
             {
             match('*'); 
 
@@ -380,8 +425,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:170:9: ( '/' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:170:11: '/'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:175:9: ( '/' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:175:11: '/'
             {
             match('/'); 
 
@@ -401,8 +446,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MOD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:171:9: ( '%' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:171:11: '%'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:176:9: ( '%' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:176:11: '%'
             {
             match('%'); 
 
@@ -422,8 +467,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:172:9: ( 'not' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:172:11: 'not'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:177:9: ( 'not' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:177:11: 'not'
             {
             match("not"); 
 
@@ -445,8 +490,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:173:9: ( 'and' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:173:11: 'and'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:178:9: ( 'and' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:178:11: 'and'
             {
             match("and"); 
 
@@ -468,8 +513,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:174:8: ( 'or' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:174:10: 'or'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:179:8: ( 'or' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:179:10: 'or'
             {
             match("or"); 
 
@@ -491,8 +536,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:175:6: ( 'if' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:175:8: 'if'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:180:6: ( 'if' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:180:8: 'if'
             {
             match("if"); 
 
@@ -514,8 +559,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = THEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:176:6: ( 'then' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:176:8: 'then'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:181:6: ( 'then' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:181:8: 'then'
             {
             match("then"); 
 
@@ -537,8 +582,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:177:6: ( 'else' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:177:8: 'else'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:182:6: ( 'else' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:182:8: 'else'
             {
             match("else"); 
 
@@ -560,8 +605,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ENDIF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:178:7: ( 'endif' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:178:9: 'endif'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:183:7: ( 'endif' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:183:9: 'endif'
             {
             match("endif"); 
 
@@ -583,8 +628,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:179:7: ( 'while' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:179:9: 'while'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:184:7: ( 'while' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:184:9: 'while'
             {
             match("while"); 
 
@@ -606,8 +651,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:180:8: ( 'do' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:180:10: 'do'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:185:8: ( 'do' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:185:10: 'do'
             {
             match("do"); 
 
@@ -629,8 +674,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ENDWHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:181:9: ( 'endwhile' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:181:11: 'endwhile'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:186:9: ( 'endwhile' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:186:11: 'endwhile'
             {
             match("endwhile"); 
 
@@ -652,8 +697,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FUNC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:182:6: ( 'func' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:182:8: 'func'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:187:6: ( 'func' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:187:8: 'func'
             {
             match("func"); 
 
@@ -675,8 +720,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ENDFUNC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:183:9: ( 'endfunc' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:183:11: 'endfunc'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:188:9: ( 'endfunc' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:188:11: 'endfunc'
             {
             match("endfunc"); 
 
@@ -698,8 +743,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:184:8: ( 'return' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:184:10: 'return'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:189:8: ( 'return' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:189:10: 'return'
             {
             match("return"); 
 
@@ -721,8 +766,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = READ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:185:6: ( 'read' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:185:8: 'read'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:190:6: ( 'read' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:190:8: 'read'
             {
             match("read"); 
 
@@ -744,8 +789,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WRITE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:186:7: ( 'write' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:186:9: 'write'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:191:7: ( 'write' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:191:9: 'write'
             {
             match("write"); 
 
@@ -767,8 +812,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:187:9: ( 'true' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:187:11: 'true'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:192:9: ( 'true' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:192:11: 'true'
             {
             match("true"); 
 
@@ -790,8 +835,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:188:9: ( 'false' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:188:11: 'false'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:193:9: ( 'false' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:193:11: 'false'
             {
             match("false"); 
 
@@ -813,8 +858,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:189:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:189:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:194:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:194:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -826,7 +871,7 @@ public class AslLexer extends Lexer {
             }
 
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:189:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:194:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -876,10 +921,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:190:6: ( ( '0' .. '9' )+ )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:190:8: ( '0' .. '9' )+
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:195:6: ( ( '0' .. '9' )+ )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:195:8: ( '0' .. '9' )+
             {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:190:8: ( '0' .. '9' )+
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:195:8: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -934,7 +979,7 @@ public class AslLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:193:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -964,13 +1009,13 @@ public class AslLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:193:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:193:16: (~ ( '\\n' | '\\r' ) )*
+                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:16: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -1004,7 +1049,7 @@ public class AslLexer extends Lexer {
                     } while (true);
 
 
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:193:30: ( '\\r' )?
+                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:30: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -1013,7 +1058,7 @@ public class AslLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:193:30: '\\r'
+                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:30: '\\r'
                             {
                             match('\r'); 
 
@@ -1030,13 +1075,13 @@ public class AslLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:194:8: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:199:8: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:194:13: ( options {greedy=false; } : . )*
+                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:199:13: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -1061,7 +1106,7 @@ public class AslLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:194:41: .
+                    	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:199:41: .
                     	    {
                     	    matchAny(); 
 
@@ -1098,12 +1143,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:203:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:203:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:203:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop7:
             do {
                 int alt7=3;
@@ -1119,7 +1164,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:18: ESC_SEQ
+            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:203:18: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -1127,7 +1172,7 @@ public class AslLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:198:28: ~ ( '\\\\' | '\"' )
+            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:203:28: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -1164,8 +1209,8 @@ public class AslLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:204:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:204:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:209:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:209:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
             {
             match('\\'); 
 
@@ -1194,8 +1239,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:207:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:207:8: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:212:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:212:8: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -1221,308 +1266,324 @@ public class AslLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:8: ( T__47 | T__48 | T__49 | T__50 | T__51 | EQUAL | NOT_EQUAL | LT | LE | GT | GE | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | THEN | ELSE | ENDIF | WHILE | DO | ENDWHILE | FUNC | ENDFUNC | RETURN | READ | WRITE | TRUE | FALSE | ID | INT | COMMENT | STRING | WS )
-        int alt8=38;
+        // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:8: ( T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | EQUAL | NOT_EQUAL | LT | LE | GT | GE | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | THEN | ELSE | ENDIF | WHILE | DO | ENDWHILE | FUNC | ENDFUNC | RETURN | READ | WRITE | TRUE | FALSE | ID | INT | COMMENT | STRING | WS )
+        int alt8=40;
         alt8 = dfa8.predict(input);
         switch (alt8) {
             case 1 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:10: T__47
-                {
-                mT__47(); 
-
-
-                }
-                break;
-            case 2 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:16: T__48
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:10: T__48
                 {
                 mT__48(); 
 
 
                 }
                 break;
-            case 3 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:22: T__49
+            case 2 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:16: T__49
                 {
                 mT__49(); 
 
 
                 }
                 break;
-            case 4 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:28: T__50
+            case 3 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:22: T__50
                 {
                 mT__50(); 
 
 
                 }
                 break;
-            case 5 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:34: T__51
+            case 4 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:28: T__51
                 {
                 mT__51(); 
 
 
                 }
                 break;
+            case 5 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:34: T__52
+                {
+                mT__52(); 
+
+
+                }
+                break;
             case 6 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:40: EQUAL
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:40: T__53
+                {
+                mT__53(); 
+
+
+                }
+                break;
+            case 7 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:46: T__54
+                {
+                mT__54(); 
+
+
+                }
+                break;
+            case 8 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:52: EQUAL
                 {
                 mEQUAL(); 
 
 
                 }
                 break;
-            case 7 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:46: NOT_EQUAL
+            case 9 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:58: NOT_EQUAL
                 {
                 mNOT_EQUAL(); 
 
 
                 }
                 break;
-            case 8 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:56: LT
+            case 10 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:68: LT
                 {
                 mLT(); 
 
 
                 }
                 break;
-            case 9 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:59: LE
+            case 11 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:71: LE
                 {
                 mLE(); 
 
 
                 }
                 break;
-            case 10 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:62: GT
+            case 12 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:74: GT
                 {
                 mGT(); 
 
 
                 }
                 break;
-            case 11 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:65: GE
+            case 13 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:77: GE
                 {
                 mGE(); 
 
 
                 }
                 break;
-            case 12 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:68: PLUS
+            case 14 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:80: PLUS
                 {
                 mPLUS(); 
 
 
                 }
                 break;
-            case 13 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:73: MINUS
+            case 15 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:85: MINUS
                 {
                 mMINUS(); 
 
 
                 }
                 break;
-            case 14 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:79: MUL
+            case 16 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:91: MUL
                 {
                 mMUL(); 
 
 
                 }
                 break;
-            case 15 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:83: DIV
+            case 17 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:95: DIV
                 {
                 mDIV(); 
 
 
                 }
                 break;
-            case 16 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:87: MOD
+            case 18 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:99: MOD
                 {
                 mMOD(); 
 
 
                 }
                 break;
-            case 17 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:91: NOT
+            case 19 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:103: NOT
                 {
                 mNOT(); 
 
 
                 }
                 break;
-            case 18 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:95: AND
+            case 20 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:107: AND
                 {
                 mAND(); 
 
 
                 }
                 break;
-            case 19 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:99: OR
+            case 21 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:111: OR
                 {
                 mOR(); 
 
 
                 }
                 break;
-            case 20 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:102: IF
+            case 22 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:114: IF
                 {
                 mIF(); 
 
 
                 }
                 break;
-            case 21 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:105: THEN
+            case 23 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:117: THEN
                 {
                 mTHEN(); 
 
 
                 }
                 break;
-            case 22 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:110: ELSE
+            case 24 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:122: ELSE
                 {
                 mELSE(); 
 
 
                 }
                 break;
-            case 23 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:115: ENDIF
+            case 25 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:127: ENDIF
                 {
                 mENDIF(); 
 
 
                 }
                 break;
-            case 24 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:121: WHILE
+            case 26 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:133: WHILE
                 {
                 mWHILE(); 
 
 
                 }
                 break;
-            case 25 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:127: DO
+            case 27 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:139: DO
                 {
                 mDO(); 
 
 
                 }
                 break;
-            case 26 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:130: ENDWHILE
+            case 28 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:142: ENDWHILE
                 {
                 mENDWHILE(); 
 
 
                 }
                 break;
-            case 27 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:139: FUNC
+            case 29 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:151: FUNC
                 {
                 mFUNC(); 
 
 
                 }
                 break;
-            case 28 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:144: ENDFUNC
+            case 30 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:156: ENDFUNC
                 {
                 mENDFUNC(); 
 
 
                 }
                 break;
-            case 29 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:152: RETURN
+            case 31 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:164: RETURN
                 {
                 mRETURN(); 
 
 
                 }
                 break;
-            case 30 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:159: READ
+            case 32 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:171: READ
                 {
                 mREAD(); 
 
 
                 }
                 break;
-            case 31 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:164: WRITE
+            case 33 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:176: WRITE
                 {
                 mWRITE(); 
 
 
                 }
                 break;
-            case 32 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:170: TRUE
+            case 34 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:182: TRUE
                 {
                 mTRUE(); 
 
 
                 }
                 break;
-            case 33 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:175: FALSE
+            case 35 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:187: FALSE
                 {
                 mFALSE(); 
 
 
                 }
                 break;
-            case 34 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:181: ID
+            case 36 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:193: ID
                 {
                 mID(); 
 
 
                 }
                 break;
-            case 35 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:184: INT
+            case 37 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:196: INT
                 {
                 mINT(); 
 
 
                 }
                 break;
-            case 36 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:188: COMMENT
+            case 38 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:200: COMMENT
                 {
                 mCOMMENT(); 
 
 
                 }
                 break;
-            case 37 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:196: STRING
+            case 39 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:208: STRING
                 {
                 mSTRING(); 
 
 
                 }
                 break;
-            case 38 :
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:203: WS
+            case 40 :
+                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:1:215: WS
                 {
                 mWS(); 
 
@@ -1537,15 +1598,15 @@ public class AslLexer extends Lexer {
 
     protected DFA8 dfa8 = new DFA8(this);
     static final String DFA8_eotS =
-        "\10\uffff\1\36\1\40\3\uffff\1\42\1\uffff\12\31\12\uffff\2\31\1\63"+
-        "\1\64\6\31\1\73\3\31\1\100\1\101\2\uffff\6\31\1\uffff\4\31\2\uffff"+
-        "\1\116\1\117\1\120\5\31\1\126\2\31\1\131\3\uffff\1\132\2\31\1\135"+
-        "\1\136\1\uffff\1\137\1\31\2\uffff\2\31\3\uffff\1\143\1\31\1\145"+
-        "\1\uffff\1\146\2\uffff";
+        "\12\uffff\1\40\1\42\3\uffff\1\44\1\uffff\12\33\12\uffff\2\33\1\65"+
+        "\1\66\6\33\1\75\3\33\1\102\1\103\2\uffff\6\33\1\uffff\4\33\2\uffff"+
+        "\1\120\1\121\1\122\5\33\1\130\2\33\1\133\3\uffff\1\134\2\33\1\137"+
+        "\1\140\1\uffff\1\141\1\33\2\uffff\2\33\3\uffff\1\145\1\33\1\147"+
+        "\1\uffff\1\150\2\uffff";
     static final String DFA8_eofS =
-        "\147\uffff";
+        "\151\uffff";
     static final String DFA8_minS =
-        "\1\11\7\uffff\2\75\3\uffff\1\52\1\uffff\1\157\1\156\1\162\1\146"+
+        "\1\11\11\uffff\2\75\3\uffff\1\52\1\uffff\1\157\1\156\1\162\1\146"+
         "\1\150\1\154\1\150\1\157\1\141\1\145\12\uffff\1\164\1\144\2\60\1"+
         "\145\1\165\1\163\1\144\2\151\1\60\1\156\1\154\1\141\2\60\2\uffff"+
         "\1\156\2\145\1\146\1\154\1\164\1\uffff\1\143\1\163\1\165\1\144\2"+
@@ -1553,7 +1614,7 @@ public class AslLexer extends Lexer {
         "\1\60\1\151\1\156\2\60\1\uffff\1\60\1\156\2\uffff\1\154\1\143\3"+
         "\uffff\1\60\1\145\1\60\1\uffff\1\60\2\uffff";
     static final String DFA8_maxS =
-        "\1\172\7\uffff\2\75\3\uffff\1\57\1\uffff\1\157\1\156\1\162\1\146"+
+        "\1\172\11\uffff\2\75\3\uffff\1\57\1\uffff\1\157\1\156\1\162\1\146"+
         "\1\162\1\156\1\162\1\157\1\165\1\145\12\uffff\1\164\1\144\2\172"+
         "\1\145\1\165\1\163\1\144\2\151\1\172\1\156\1\154\1\164\2\172\2\uffff"+
         "\1\156\2\145\1\167\1\154\1\164\1\uffff\1\143\1\163\1\165\1\144\2"+
@@ -1561,19 +1622,19 @@ public class AslLexer extends Lexer {
         "\1\172\1\151\1\156\2\172\1\uffff\1\172\1\156\2\uffff\1\154\1\143"+
         "\3\uffff\1\172\1\145\1\172\1\uffff\1\172\2\uffff";
     static final String DFA8_acceptS =
-        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\2\uffff\1\14\1\15\1\16\1\uffff"+
-        "\1\20\12\uffff\1\42\1\43\1\45\1\46\1\11\1\10\1\13\1\12\1\44\1\17"+
-        "\20\uffff\1\23\1\24\6\uffff\1\31\4\uffff\1\21\1\22\14\uffff\1\25"+
-        "\1\40\1\26\5\uffff\1\33\2\uffff\1\36\1\27\2\uffff\1\30\1\37\1\41"+
-        "\3\uffff\1\35\1\uffff\1\34\1\32";
+        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\2\uffff\1\16\1\17"+
+        "\1\20\1\uffff\1\22\12\uffff\1\44\1\45\1\47\1\50\1\13\1\12\1\15\1"+
+        "\14\1\46\1\21\20\uffff\1\25\1\26\6\uffff\1\33\4\uffff\1\23\1\24"+
+        "\14\uffff\1\27\1\42\1\30\5\uffff\1\35\2\uffff\1\40\1\31\2\uffff"+
+        "\1\32\1\41\1\43\3\uffff\1\37\1\uffff\1\36\1\34";
     static final String DFA8_specialS =
-        "\147\uffff}>";
+        "\151\uffff}>";
     static final String[] DFA8_transitionS = {
-            "\2\34\2\uffff\1\34\22\uffff\1\34\1\7\1\33\2\uffff\1\16\1\1\1"+
-            "\uffff\1\2\1\3\1\14\1\12\1\4\1\13\1\uffff\1\15\12\32\1\uffff"+
-            "\1\5\1\10\1\6\1\11\2\uffff\32\31\4\uffff\1\31\1\uffff\1\20\2"+
-            "\31\1\26\1\24\1\27\2\31\1\22\4\31\1\17\1\21\2\31\1\30\1\31\1"+
-            "\23\2\31\1\25\3\31",
+            "\2\36\2\uffff\1\36\22\uffff\1\36\1\11\1\35\2\uffff\1\20\1\1"+
+            "\1\uffff\1\2\1\3\1\16\1\14\1\4\1\15\1\uffff\1\17\12\34\1\uffff"+
+            "\1\5\1\12\1\10\1\13\2\uffff\32\33\1\6\1\uffff\1\7\1\uffff\1"+
+            "\33\1\uffff\1\22\2\33\1\30\1\26\1\31\2\33\1\24\4\33\1\21\1\23"+
+            "\2\33\1\32\1\33\1\25\2\33\1\27\3\33",
             "",
             "",
             "",
@@ -1581,99 +1642,101 @@ public class AslLexer extends Lexer {
             "",
             "",
             "",
-            "\1\35",
+            "",
+            "",
             "\1\37",
+            "\1\41",
             "",
             "",
             "",
-            "\1\41\4\uffff\1\41",
+            "\1\43\4\uffff\1\43",
             "",
-            "\1\43",
-            "\1\44",
             "\1\45",
             "\1\46",
-            "\1\47\11\uffff\1\50",
-            "\1\51\1\uffff\1\52",
-            "\1\53\11\uffff\1\54",
-            "\1\55",
-            "\1\57\23\uffff\1\56",
-            "\1\60",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "\1\61",
+            "\1\47",
+            "\1\50",
+            "\1\51\11\uffff\1\52",
+            "\1\53\1\uffff\1\54",
+            "\1\55\11\uffff\1\56",
+            "\1\57",
+            "\1\61\23\uffff\1\60",
             "\1\62",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\65",
-            "\1\66",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\63",
+            "\1\64",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "\1\67",
             "\1\70",
             "\1\71",
             "\1\72",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\73",
             "\1\74",
-            "\1\75",
-            "\1\77\22\uffff\1\76",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\1\76",
+            "\1\77",
+            "\1\101\22\uffff\1\100",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
             "",
-            "\1\102",
-            "\1\103",
             "\1\104",
-            "\1\107\2\uffff\1\105\15\uffff\1\106",
-            "\1\110",
-            "\1\111",
-            "",
+            "\1\105",
+            "\1\106",
+            "\1\111\2\uffff\1\107\15\uffff\1\110",
             "\1\112",
             "\1\113",
+            "",
             "\1\114",
             "\1\115",
+            "\1\116",
+            "\1\117",
             "",
             "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\121",
-            "\1\122",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "\1\123",
             "\1\124",
             "\1\125",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\126",
             "\1\127",
-            "\1\130",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\1\131",
+            "\1\132",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
             "",
             "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\133",
-            "\1\134",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\1\135",
+            "\1\136",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\140",
-            "",
-            "",
-            "\1\141",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "\1\142",
             "",
             "",
-            "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\143",
             "\1\144",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "",
+            "",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\1\146",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
             ""
     };
@@ -1708,7 +1771,7 @@ public class AslLexer extends Lexer {
             this.transition = DFA8_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__47 | T__48 | T__49 | T__50 | T__51 | EQUAL | NOT_EQUAL | LT | LE | GT | GE | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | THEN | ELSE | ENDIF | WHILE | DO | ENDWHILE | FUNC | ENDFUNC | RETURN | READ | WRITE | TRUE | FALSE | ID | INT | COMMENT | STRING | WS );";
+            return "1:1: Tokens : ( T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | EQUAL | NOT_EQUAL | LT | LE | GT | GE | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | THEN | ELSE | ENDIF | WHILE | DO | ENDWHILE | FUNC | ENDFUNC | RETURN | READ | WRITE | TRUE | FALSE | ID | INT | COMMENT | STRING | WS );";
         }
     }
  
