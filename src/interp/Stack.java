@@ -38,7 +38,8 @@ import java.util.ListIterator;
  * <name of variable,value>.
  */
  
-public class Stack {
+public class Stack 
+{
 
     /** Stack of activation records */
     private LinkedList<HashMap<String,Data>> Stack;
@@ -51,10 +52,12 @@ public class Stack {
      * For each function call, the function name and
      * the line number of the call are stored.
      */
-    class StackTraceItem {
+    class StackTraceItem 
+	{
         public String fname; // Function name
         public int line; // Line number
-        public StackTraceItem (String name, int l) {
+        public StackTraceItem (String name, int l) 
+		{
             fname = name; line = l;
         }
     }

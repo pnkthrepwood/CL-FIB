@@ -155,10 +155,14 @@ public class Interp {
      * @param args The AST node representing the list of arguments of the caller.
      * @return The data returned by the function.
      */
-    private Data executeFunction (String funcname, AslTree args) {
+    private Data executeFunction (String funcname, AslTree args) 
+	{
         // Get the AST of the function
         AslTree f = FuncName2Tree.get(funcname);
-        if (f == null) throw new RuntimeException(" function " + funcname + " not declared");
+        if (f == null) 
+		{
+			throw new RuntimeException(" function " + funcname + " not declared");
+		}
 
         // Gather the list of arguments of the caller. This function
         // performs all the checks required for the compatibility of
@@ -179,7 +183,8 @@ public class Interp {
         setLineNumber(f);
          
         // Copy the parameters to the current activation record
-        for (int i = 0; i < nparam; ++i) {
+        for (int i = 0; i < nparam; ++i) 
+		{
             String param_name = p.getChild(i).getText();
             Stack.defineVariable(param_name, Arg_values.get(i));
         }
@@ -188,10 +193,16 @@ public class Interp {
         Data result = executeListInstructions (f.getChild(2));
 
         // If the result is null, then the function returns void
-        if (result == null) result = new Data();
+        if (result == null) 
+		{
+			result = new Data();
+		}
         
         // Dumps trace information
-        if (trace != null) traceReturn(f, result, Arg_values);
+        if (trace != null) 
+		{
+			traceReturn(f, result, Arg_values);
+		}
         
         // Destroy the activation record
         Stack.popActivationRecord();
@@ -207,13 +218,18 @@ public class Interp {
      * @return The data returned by the instructions (null if no return
      * statement has been executed).
      */
-    private Data executeListInstructions (AslTree t) {
+    private Data executeListInstructions (AslTree t) 
+	{
         assert t != null;
         Data result = null;
         int ninstr = t.getChildCount();
-        for (int i = 0; i < ninstr; ++i) {
+        for (int i = 0; i < ninstr; ++i) 
+		{
             result = executeInstruction (t.getChild(i));
-            if (result != null) return result;
+            if (result != null) 
+			{
+				return result;
+			}
         }
         return null;
     }
@@ -226,15 +242,16 @@ public class Interp {
      * non-null only if a return statement is executed or a block
      * of instructions executing a return.
      */
-    private Data executeInstruction (AslTree t) {
+    private Data executeInstruction (AslTree t) 
+	{
         assert t != null;
         
         setLineNumber(t);
         Data value; // The returned value
 
         // A big switch for all type of instructions
-        switch (t.getType()) {
-
+        switch (t.getType()) 
+		{
             // Assignment
             case AslLexer.ASSIGN:
                 value = evaluateExpression(t.getChild(1));
@@ -322,7 +339,8 @@ public class Interp {
 
         Data value = null;
         // Atoms
-        switch (type) {
+        switch (type) 
+		{
             // A variable
             case AslLexer.ID:
                 value = new Data(Stack.getVariable(t.getText()));
@@ -339,7 +357,8 @@ public class Interp {
             case AslLexer.FUNCALL:
                 value = executeFunction(t.getChild(0).getText(), t.getChild(1));
                 assert value != null;
-                if (value.isVoid()) {
+                if (value.isVoid()) 
+				{
                     throw new RuntimeException ("function expected to return a value");
                 }
                 break;

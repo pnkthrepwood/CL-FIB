@@ -39,7 +39,8 @@ package interp;
 
 import parser.*;
 
-public class Data {
+public class Data 
+{
     /** Types of data */
     public enum Type {VOID, BOOLEAN, INTEGER;}
 
@@ -86,7 +87,8 @@ public class Data {
      * Gets the value of a Boolean data. The method asserts that
      * the data is a Boolean.
      */
-    public boolean getBooleanValue() {
+    public boolean getBooleanValue() 
+	{
         assert type == Type.BOOLEAN;
         return value == 1;
     }
@@ -101,8 +103,13 @@ public class Data {
     public void setData(Data d) { type = d.type; value = d.value; }
     
     /** Returns a string representing the data in textual form. */
-    public String toString() {
-        if (type == Type.BOOLEAN) return value == 1 ? "true" : "false";
+    public String toString() 
+	{
+        if (type == Type.BOOLEAN)
+		{
+ 			return value == 1 ? "true" : "false";
+		}
+
         return Integer.toString(value);
     }
     
@@ -110,8 +117,12 @@ public class Data {
      * Checks for zero (for division). It raises an exception in case
      * the value is zero.
      */
-    private void checkDivZero(Data d) {
-        if (d.value == 0) throw new RuntimeException ("Division by zero");
+    private void checkDivZero(Data d) 
+	{
+        if (d.value == 0) 
+		{
+			throw new RuntimeException ("Division by zero");
+		}
     }
 
     /**
@@ -121,9 +132,11 @@ public class Data {
      * @param d Second operand.
      */
      
-    public void evaluateArithmetic (int op, Data d) {
+    public void evaluateArithmetic (int op, Data d) 
+	{
         assert type == Type.INTEGER && d.type == Type.INTEGER;
-        switch (op) {
+        switch (op) 
+		{
             case AslLexer.PLUS: value += d.value; break;
             case AslLexer.MINUS: value -= d.value; break;
             case AslLexer.MUL: value *= d.value; break;
@@ -139,7 +152,8 @@ public class Data {
      * @param d Second operand.
      * @return A Boolean data with the value of the expression.
      */
-    public Data evaluateRelational (int op, Data d) {
+    public Data evaluateRelational (int op, Data d) 
+	{
         assert type != Type.VOID && type == d.type;
         switch (op) {
             case AslLexer.EQUAL: return new Data(value == d.value);
