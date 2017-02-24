@@ -254,9 +254,21 @@ public class Interp {
 		{
             // Assignment
             case AslLexer.ASSIGN:
+            {
                 value = evaluateExpression(t.getChild(1));
-                Stack.defineVariable (t.getChild(0).getText(), value);
+
+                AslTree var = t.getChild(0);
+
+                String id = var.getText();
+                if (var.getType() == AslLexer.ARR)
+                {
+                    id = 
+                        var.getChild(0)+"%"+
+                        evaluateExpression(var.getChild(1));
+                }
+                Stack.defineVariable(id, value);
                 return null;
+            }
 
             // If-then-else
             case AslLexer.IF:

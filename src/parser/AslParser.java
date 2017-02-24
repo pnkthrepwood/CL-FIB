@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/pnkthrepwood/cl/Asl/src/parser/Asl.g 2017-02-24 07:06:35
+// $ANTLR 3.4 /home/pnk/cl/src/parser/Asl.g 2017-02-24 18:35:48
 
 package parser;
 import interp.AslTree;
@@ -121,7 +121,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return AslParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/pnkthrepwood/cl/Asl/src/parser/Asl.g"; }
+    public String getGrammarFileName() { return "/home/pnk/cl/src/parser/Asl.g"; }
 
 
     public static class prog_return extends ParserRuleReturnScope {
@@ -131,7 +131,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "prog"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:62:1: prog : ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) ;
+    // /home/pnk/cl/src/parser/Asl.g:62:1: prog : ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) ;
     public final AslParser.prog_return prog() throws RecognitionException {
         AslParser.prog_return retval = new AslParser.prog_return();
         retval.start = input.LT(1);
@@ -147,10 +147,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_EOF=new RewriteRuleTokenStream(adaptor,"token EOF");
         RewriteRuleSubtreeStream stream_func=new RewriteRuleSubtreeStream(adaptor,"rule func");
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:62:6: ( ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:62:8: ( func )+ EOF
+            // /home/pnk/cl/src/parser/Asl.g:62:6: ( ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) )
+            // /home/pnk/cl/src/parser/Asl.g:62:8: ( func )+ EOF
             {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:62:8: ( func )+
+            // /home/pnk/cl/src/parser/Asl.g:62:8: ( func )+
             int cnt1=0;
             loop1:
             do {
@@ -164,7 +164,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:62:8: func
+            	    // /home/pnk/cl/src/parser/Asl.g:62:8: func
             	    {
             	    pushFollow(FOLLOW_func_in_prog169);
             	    func1=func();
@@ -203,7 +203,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 62:18: -> ^( LIST_FUNCTIONS ( func )+ )
             {
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:62:21: ^( LIST_FUNCTIONS ( func )+ )
+                // /home/pnk/cl/src/parser/Asl.g:62:21: ^( LIST_FUNCTIONS ( func )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -258,7 +258,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "func"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:66:1: func : FUNC ^ ID params block_instructions ENDFUNC !;
+    // /home/pnk/cl/src/parser/Asl.g:66:1: func : FUNC ^ ID params block_instructions ENDFUNC !;
     public final AslParser.func_return func() throws RecognitionException {
         AslParser.func_return retval = new AslParser.func_return();
         retval.start = input.LT(1);
@@ -279,8 +279,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ENDFUNC7_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:66:6: ( FUNC ^ ID params block_instructions ENDFUNC !)
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:66:8: FUNC ^ ID params block_instructions ENDFUNC !
+            // /home/pnk/cl/src/parser/Asl.g:66:6: ( FUNC ^ ID params block_instructions ENDFUNC !)
+            // /home/pnk/cl/src/parser/Asl.g:66:8: FUNC ^ ID params block_instructions ENDFUNC !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -346,7 +346,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "params"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:70:1: params : '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) ;
+    // /home/pnk/cl/src/parser/Asl.g:70:1: params : '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) ;
     public final AslParser.params_return params() throws RecognitionException {
         AslParser.params_return retval = new AslParser.params_return();
         retval.start = input.LT(1);
@@ -365,14 +365,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_50=new RewriteRuleTokenStream(adaptor,"token 50");
         RewriteRuleSubtreeStream stream_paramlist=new RewriteRuleSubtreeStream(adaptor,"rule paramlist");
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:70:8: ( '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:70:10: '(' ( paramlist )? ')'
+            // /home/pnk/cl/src/parser/Asl.g:70:8: ( '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) )
+            // /home/pnk/cl/src/parser/Asl.g:70:10: '(' ( paramlist )? ')'
             {
             char_literal8=(Token)match(input,49,FOLLOW_49_in_params239);  
             stream_49.add(char_literal8);
 
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:70:14: ( paramlist )?
+            // /home/pnk/cl/src/parser/Asl.g:70:14: ( paramlist )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -381,7 +381,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:70:14: paramlist
+                    // /home/pnk/cl/src/parser/Asl.g:70:14: paramlist
                     {
                     pushFollow(FOLLOW_paramlist_in_params241);
                     paramlist9=paramlist();
@@ -413,14 +413,14 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 70:29: -> ^( PARAMS ( paramlist )? )
             {
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:70:32: ^( PARAMS ( paramlist )? )
+                // /home/pnk/cl/src/parser/Asl.g:70:32: ^( PARAMS ( paramlist )? )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
                 (AslTree)adaptor.create(PARAMS, "PARAMS")
                 , root_1);
 
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:70:41: ( paramlist )?
+                // /home/pnk/cl/src/parser/Asl.g:70:41: ( paramlist )?
                 if ( stream_paramlist.hasNext() ) {
                     adaptor.addChild(root_1, stream_paramlist.nextTree());
 
@@ -466,7 +466,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "paramlist"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:74:1: paramlist : param ( ',' ! param )* ;
+    // /home/pnk/cl/src/parser/Asl.g:74:1: paramlist : param ( ',' ! param )* ;
     public final AslParser.paramlist_return paramlist() throws RecognitionException {
         AslParser.paramlist_return retval = new AslParser.paramlist_return();
         retval.start = input.LT(1);
@@ -483,8 +483,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal12_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:74:10: ( param ( ',' ! param )* )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:74:12: param ( ',' ! param )*
+            // /home/pnk/cl/src/parser/Asl.g:74:10: ( param ( ',' ! param )* )
+            // /home/pnk/cl/src/parser/Asl.g:74:12: param ( ',' ! param )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -496,7 +496,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, param11.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:74:18: ( ',' ! param )*
+            // /home/pnk/cl/src/parser/Asl.g:74:18: ( ',' ! param )*
             loop3:
             do {
                 int alt3=2;
@@ -509,7 +509,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:74:19: ',' ! param
+            	    // /home/pnk/cl/src/parser/Asl.g:74:19: ',' ! param
             	    {
             	    char_literal12=(Token)match(input,51,FOLLOW_51_in_paramlist273); 
 
@@ -560,7 +560,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "param"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:79:1: param : ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) );
+    // /home/pnk/cl/src/parser/Asl.g:79:1: param : ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) );
     public final AslParser.param_return param() throws RecognitionException {
         AslParser.param_return retval = new AslParser.param_return();
         retval.start = input.LT(1);
@@ -577,7 +577,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:79:9: ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) )
+            // /home/pnk/cl/src/parser/Asl.g:79:9: ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -596,7 +596,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt4) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:79:13: '&' id= ID
+                    // /home/pnk/cl/src/parser/Asl.g:79:13: '&' id= ID
                     {
                     char_literal14=(Token)match(input,48,FOLLOW_48_in_param301);  
                     stream_48.add(char_literal14);
@@ -619,7 +619,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 79:23: -> ^( PREF[$id,$id.text] )
                     {
-                        // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:79:26: ^( PREF[$id,$id.text] )
+                        // /home/pnk/cl/src/parser/Asl.g:79:26: ^( PREF[$id,$id.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -637,7 +637,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:80:13: id= ID
+                    // /home/pnk/cl/src/parser/Asl.g:80:13: id= ID
                     {
                     id=(Token)match(input,ID,FOLLOW_ID_in_param328);  
                     stream_ID.add(id);
@@ -656,7 +656,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 80:19: -> ^( PVALUE[$id,$id.text] )
                     {
-                        // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:80:22: ^( PVALUE[$id,$id.text] )
+                        // /home/pnk/cl/src/parser/Asl.g:80:22: ^( PVALUE[$id,$id.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -704,7 +704,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "block_instructions"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:84:1: block_instructions : instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) ;
+    // /home/pnk/cl/src/parser/Asl.g:84:1: block_instructions : instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) ;
     public final AslParser.block_instructions_return block_instructions() throws RecognitionException {
         AslParser.block_instructions_return retval = new AslParser.block_instructions_return();
         retval.start = input.LT(1);
@@ -722,8 +722,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleSubtreeStream stream_instruction=new RewriteRuleSubtreeStream(adaptor,"rule instruction");
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:85:9: ( instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:85:12: instruction ( ';' instruction )*
+            // /home/pnk/cl/src/parser/Asl.g:85:9: ( instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) )
+            // /home/pnk/cl/src/parser/Asl.g:85:12: instruction ( ';' instruction )*
             {
             pushFollow(FOLLOW_instruction_in_block_instructions362);
             instruction15=instruction();
@@ -732,7 +732,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_instruction.add(instruction15.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:85:24: ( ';' instruction )*
+            // /home/pnk/cl/src/parser/Asl.g:85:24: ( ';' instruction )*
             loop5:
             do {
                 int alt5=2;
@@ -745,7 +745,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:85:25: ';' instruction
+            	    // /home/pnk/cl/src/parser/Asl.g:85:25: ';' instruction
             	    {
             	    char_literal16=(Token)match(input,52,FOLLOW_52_in_block_instructions365);  
             	    stream_52.add(char_literal16);
@@ -780,7 +780,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 86:13: -> ^( LIST_INSTR ( instruction )+ )
             {
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:86:16: ^( LIST_INSTR ( instruction )+ )
+                // /home/pnk/cl/src/parser/Asl.g:86:16: ^( LIST_INSTR ( instruction )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -835,7 +835,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "instruction"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:90:1: instruction : ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |);
+    // /home/pnk/cl/src/parser/Asl.g:90:1: instruction : ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |);
     public final AslParser.instruction_return instruction() throws RecognitionException {
         AslParser.instruction_return retval = new AslParser.instruction_return();
         retval.start = input.LT(1);
@@ -860,7 +860,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:91:9: ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |)
+            // /home/pnk/cl/src/parser/Asl.g:91:9: ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |)
             int alt6=8;
             switch ( input.LA(1) ) {
             case ID:
@@ -926,7 +926,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt6) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:91:11: assign
+                    // /home/pnk/cl/src/parser/Asl.g:91:11: assign
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -941,7 +941,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:92:11: ite_stmt
+                    // /home/pnk/cl/src/parser/Asl.g:92:11: ite_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -956,7 +956,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:93:11: while_stmt
+                    // /home/pnk/cl/src/parser/Asl.g:93:11: while_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -971,7 +971,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:94:13: funcall
+                    // /home/pnk/cl/src/parser/Asl.g:94:13: funcall
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -986,7 +986,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:95:11: return_stmt
+                    // /home/pnk/cl/src/parser/Asl.g:95:11: return_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1001,7 +1001,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:96:11: read
+                    // /home/pnk/cl/src/parser/Asl.g:96:11: read
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1016,7 +1016,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:97:12: write
+                    // /home/pnk/cl/src/parser/Asl.g:97:12: write
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1031,7 +1031,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:99:9: 
+                    // /home/pnk/cl/src/parser/Asl.g:99:9: 
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1069,7 +1069,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "assign"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:102:1: assign : ident eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] ident expr ) ;
+    // /home/pnk/cl/src/parser/Asl.g:102:1: assign : ident eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] ident expr ) ;
     public final AslParser.assign_return assign() throws RecognitionException {
         AslParser.assign_return retval = new AslParser.assign_return();
         retval.start = input.LT(1);
@@ -1088,8 +1088,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_ident=new RewriteRuleSubtreeStream(adaptor,"rule ident");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:102:8: ( ident eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] ident expr ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:102:10: ident eq= EQUAL expr
+            // /home/pnk/cl/src/parser/Asl.g:102:8: ( ident eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] ident expr ) )
+            // /home/pnk/cl/src/parser/Asl.g:102:10: ident eq= EQUAL expr
             {
             pushFollow(FOLLOW_ident_in_assign599);
             ident25=ident();
@@ -1110,7 +1110,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_expr.add(expr26.getTree());
 
             // AST REWRITE
-            // elements: ident, expr
+            // elements: expr, ident
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1122,7 +1122,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 102:30: -> ^( ASSIGN[$eq,\":=\"] ident expr )
             {
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:102:33: ^( ASSIGN[$eq,\":=\"] ident expr )
+                // /home/pnk/cl/src/parser/Asl.g:102:33: ^( ASSIGN[$eq,\":=\"] ident expr )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -1172,7 +1172,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ite_stmt"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:106:1: ite_stmt : IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !;
+    // /home/pnk/cl/src/parser/Asl.g:106:1: ite_stmt : IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !;
     public final AslParser.ite_stmt_return ite_stmt() throws RecognitionException {
         AslParser.ite_stmt_return retval = new AslParser.ite_stmt_return();
         retval.start = input.LT(1);
@@ -1197,8 +1197,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ENDIF33_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:106:10: ( IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !)
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:106:12: IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !
+            // /home/pnk/cl/src/parser/Asl.g:106:10: ( IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !)
+            // /home/pnk/cl/src/parser/Asl.g:106:12: IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1226,7 +1226,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, block_instructions30.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:106:46: ( ELSE ! block_instructions )?
+            // /home/pnk/cl/src/parser/Asl.g:106:46: ( ELSE ! block_instructions )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1235,7 +1235,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:106:47: ELSE ! block_instructions
+                    // /home/pnk/cl/src/parser/Asl.g:106:47: ELSE ! block_instructions
                     {
                     ELSE31=(Token)match(input,ELSE,FOLLOW_ELSE_in_ite_stmt645); 
 
@@ -1285,7 +1285,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "while_stmt"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:110:1: while_stmt : WHILE ^ expr DO ! block_instructions ENDWHILE !;
+    // /home/pnk/cl/src/parser/Asl.g:110:1: while_stmt : WHILE ^ expr DO ! block_instructions ENDWHILE !;
     public final AslParser.while_stmt_return while_stmt() throws RecognitionException {
         AslParser.while_stmt_return retval = new AslParser.while_stmt_return();
         retval.start = input.LT(1);
@@ -1306,8 +1306,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ENDWHILE38_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:110:12: ( WHILE ^ expr DO ! block_instructions ENDWHILE !)
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:110:14: WHILE ^ expr DO ! block_instructions ENDWHILE !
+            // /home/pnk/cl/src/parser/Asl.g:110:12: ( WHILE ^ expr DO ! block_instructions ENDWHILE !)
+            // /home/pnk/cl/src/parser/Asl.g:110:14: WHILE ^ expr DO ! block_instructions ENDWHILE !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1368,7 +1368,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "return_stmt"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:114:1: return_stmt : RETURN ^ ( expr )? ;
+    // /home/pnk/cl/src/parser/Asl.g:114:1: return_stmt : RETURN ^ ( expr )? ;
     public final AslParser.return_stmt_return return_stmt() throws RecognitionException {
         AslParser.return_stmt_return retval = new AslParser.return_stmt_return();
         retval.start = input.LT(1);
@@ -1383,8 +1383,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree RETURN39_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:114:13: ( RETURN ^ ( expr )? )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:114:15: RETURN ^ ( expr )?
+            // /home/pnk/cl/src/parser/Asl.g:114:13: ( RETURN ^ ( expr )? )
+            // /home/pnk/cl/src/parser/Asl.g:114:15: RETURN ^ ( expr )?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1396,7 +1396,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.becomeRoot(RETURN39_tree, root_0);
 
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:114:23: ( expr )?
+            // /home/pnk/cl/src/parser/Asl.g:114:23: ( expr )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1405,7 +1405,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt8) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:114:23: expr
+                    // /home/pnk/cl/src/parser/Asl.g:114:23: expr
                     {
                     pushFollow(FOLLOW_expr_in_return_stmt711);
                     expr40=expr();
@@ -1451,7 +1451,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "read"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:118:1: read : READ ^ ID ;
+    // /home/pnk/cl/src/parser/Asl.g:118:1: read : READ ^ ID ;
     public final AslParser.read_return read() throws RecognitionException {
         AslParser.read_return retval = new AslParser.read_return();
         retval.start = input.LT(1);
@@ -1466,8 +1466,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ID42_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:118:6: ( READ ^ ID )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:118:8: READ ^ ID
+            // /home/pnk/cl/src/parser/Asl.g:118:6: ( READ ^ ID )
+            // /home/pnk/cl/src/parser/Asl.g:118:8: READ ^ ID
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1517,7 +1517,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "write"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:122:1: write : WRITE ^ ( expr | STRING ) ;
+    // /home/pnk/cl/src/parser/Asl.g:122:1: write : WRITE ^ ( expr | STRING ) ;
     public final AslParser.write_return write() throws RecognitionException {
         AslParser.write_return retval = new AslParser.write_return();
         retval.start = input.LT(1);
@@ -1534,8 +1534,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree STRING45_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:122:7: ( WRITE ^ ( expr | STRING ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:122:11: WRITE ^ ( expr | STRING )
+            // /home/pnk/cl/src/parser/Asl.g:122:7: ( WRITE ^ ( expr | STRING ) )
+            // /home/pnk/cl/src/parser/Asl.g:122:11: WRITE ^ ( expr | STRING )
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1547,7 +1547,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.becomeRoot(WRITE43_tree, root_0);
 
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:122:18: ( expr | STRING )
+            // /home/pnk/cl/src/parser/Asl.g:122:18: ( expr | STRING )
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -1566,7 +1566,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:122:19: expr
+                    // /home/pnk/cl/src/parser/Asl.g:122:19: expr
                     {
                     pushFollow(FOLLOW_expr_in_write757);
                     expr44=expr();
@@ -1578,7 +1578,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:122:26: STRING
+                    // /home/pnk/cl/src/parser/Asl.g:122:26: STRING
                     {
                     STRING45=(Token)match(input,STRING,FOLLOW_STRING_in_write761); 
                     STRING45_tree = 
@@ -1624,7 +1624,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:126:1: expr : boolterm ( OR ^ boolterm )* ;
+    // /home/pnk/cl/src/parser/Asl.g:126:1: expr : boolterm ( OR ^ boolterm )* ;
     public final AslParser.expr_return expr() throws RecognitionException {
         AslParser.expr_return retval = new AslParser.expr_return();
         retval.start = input.LT(1);
@@ -1641,8 +1641,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree OR47_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:126:9: ( boolterm ( OR ^ boolterm )* )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:126:13: boolterm ( OR ^ boolterm )*
+            // /home/pnk/cl/src/parser/Asl.g:126:9: ( boolterm ( OR ^ boolterm )* )
+            // /home/pnk/cl/src/parser/Asl.g:126:13: boolterm ( OR ^ boolterm )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1654,7 +1654,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, boolterm46.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:126:22: ( OR ^ boolterm )*
+            // /home/pnk/cl/src/parser/Asl.g:126:22: ( OR ^ boolterm )*
             loop10:
             do {
                 int alt10=2;
@@ -1667,7 +1667,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt10) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:126:23: OR ^ boolterm
+            	    // /home/pnk/cl/src/parser/Asl.g:126:23: OR ^ boolterm
             	    {
             	    OR47=(Token)match(input,OR,FOLLOW_OR_in_expr789); 
             	    OR47_tree = 
@@ -1723,7 +1723,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "boolterm"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:129:1: boolterm : boolfact ( AND ^ boolfact )* ;
+    // /home/pnk/cl/src/parser/Asl.g:129:1: boolterm : boolfact ( AND ^ boolfact )* ;
     public final AslParser.boolterm_return boolterm() throws RecognitionException {
         AslParser.boolterm_return retval = new AslParser.boolterm_return();
         retval.start = input.LT(1);
@@ -1740,8 +1740,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree AND50_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:129:9: ( boolfact ( AND ^ boolfact )* )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:129:13: boolfact ( AND ^ boolfact )*
+            // /home/pnk/cl/src/parser/Asl.g:129:9: ( boolfact ( AND ^ boolfact )* )
+            // /home/pnk/cl/src/parser/Asl.g:129:13: boolfact ( AND ^ boolfact )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1753,7 +1753,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, boolfact49.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:129:22: ( AND ^ boolfact )*
+            // /home/pnk/cl/src/parser/Asl.g:129:22: ( AND ^ boolfact )*
             loop11:
             do {
                 int alt11=2;
@@ -1766,7 +1766,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt11) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:129:23: AND ^ boolfact
+            	    // /home/pnk/cl/src/parser/Asl.g:129:23: AND ^ boolfact
             	    {
             	    AND50=(Token)match(input,AND,FOLLOW_AND_in_boolterm815); 
             	    AND50_tree = 
@@ -1822,7 +1822,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "boolfact"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:1: boolfact : num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? ;
+    // /home/pnk/cl/src/parser/Asl.g:132:1: boolfact : num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? ;
     public final AslParser.boolfact_return boolfact() throws RecognitionException {
         AslParser.boolfact_return retval = new AslParser.boolfact_return();
         retval.start = input.LT(1);
@@ -1849,8 +1849,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree GE58_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:9: ( num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:13: num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
+            // /home/pnk/cl/src/parser/Asl.g:132:9: ( num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? )
+            // /home/pnk/cl/src/parser/Asl.g:132:13: num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1862,7 +1862,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, num_expr52.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:22: ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
+            // /home/pnk/cl/src/parser/Asl.g:132:22: ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1871,9 +1871,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt13) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr
+                    // /home/pnk/cl/src/parser/Asl.g:132:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr
                     {
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^)
+                    // /home/pnk/cl/src/parser/Asl.g:132:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^)
                     int alt12=6;
                     switch ( input.LA(1) ) {
                     case EQUAL:
@@ -1916,7 +1916,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt12) {
                         case 1 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:24: EQUAL ^
+                            // /home/pnk/cl/src/parser/Asl.g:132:24: EQUAL ^
                             {
                             EQUAL53=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_boolfact842); 
                             EQUAL53_tree = 
@@ -1928,7 +1928,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:33: NOT_EQUAL ^
+                            // /home/pnk/cl/src/parser/Asl.g:132:33: NOT_EQUAL ^
                             {
                             NOT_EQUAL54=(Token)match(input,NOT_EQUAL,FOLLOW_NOT_EQUAL_in_boolfact847); 
                             NOT_EQUAL54_tree = 
@@ -1940,7 +1940,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 3 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:46: LT ^
+                            // /home/pnk/cl/src/parser/Asl.g:132:46: LT ^
                             {
                             LT55=(Token)match(input,LT,FOLLOW_LT_in_boolfact852); 
                             LT55_tree = 
@@ -1952,7 +1952,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 4 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:52: LE ^
+                            // /home/pnk/cl/src/parser/Asl.g:132:52: LE ^
                             {
                             LE56=(Token)match(input,LE,FOLLOW_LE_in_boolfact857); 
                             LE56_tree = 
@@ -1964,7 +1964,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 5 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:58: GT ^
+                            // /home/pnk/cl/src/parser/Asl.g:132:58: GT ^
                             {
                             GT57=(Token)match(input,GT,FOLLOW_GT_in_boolfact862); 
                             GT57_tree = 
@@ -1976,7 +1976,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 6 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:132:64: GE ^
+                            // /home/pnk/cl/src/parser/Asl.g:132:64: GE ^
                             {
                             GE58=(Token)match(input,GE,FOLLOW_GE_in_boolfact867); 
                             GE58_tree = 
@@ -2035,7 +2035,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "num_expr"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:1: num_expr : term ( ( PLUS ^| MINUS ^) term )* ;
+    // /home/pnk/cl/src/parser/Asl.g:135:1: num_expr : term ( ( PLUS ^| MINUS ^) term )* ;
     public final AslParser.num_expr_return num_expr() throws RecognitionException {
         AslParser.num_expr_return retval = new AslParser.num_expr_return();
         retval.start = input.LT(1);
@@ -2054,8 +2054,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MINUS62_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:9: ( term ( ( PLUS ^| MINUS ^) term )* )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:13: term ( ( PLUS ^| MINUS ^) term )*
+            // /home/pnk/cl/src/parser/Asl.g:135:9: ( term ( ( PLUS ^| MINUS ^) term )* )
+            // /home/pnk/cl/src/parser/Asl.g:135:13: term ( ( PLUS ^| MINUS ^) term )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2067,7 +2067,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, term60.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:18: ( ( PLUS ^| MINUS ^) term )*
+            // /home/pnk/cl/src/parser/Asl.g:135:18: ( ( PLUS ^| MINUS ^) term )*
             loop15:
             do {
                 int alt15=2;
@@ -2080,9 +2080,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt15) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:20: ( PLUS ^| MINUS ^) term
+            	    // /home/pnk/cl/src/parser/Asl.g:135:20: ( PLUS ^| MINUS ^) term
             	    {
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:20: ( PLUS ^| MINUS ^)
+            	    // /home/pnk/cl/src/parser/Asl.g:135:20: ( PLUS ^| MINUS ^)
             	    int alt14=2;
             	    int LA14_0 = input.LA(1);
 
@@ -2101,7 +2101,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    switch (alt14) {
             	        case 1 :
-            	            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:21: PLUS ^
+            	            // /home/pnk/cl/src/parser/Asl.g:135:21: PLUS ^
             	            {
             	            PLUS61=(Token)match(input,PLUS,FOLLOW_PLUS_in_num_expr896); 
             	            PLUS61_tree = 
@@ -2113,7 +2113,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:135:29: MINUS ^
+            	            // /home/pnk/cl/src/parser/Asl.g:135:29: MINUS ^
             	            {
             	            MINUS62=(Token)match(input,MINUS,FOLLOW_MINUS_in_num_expr901); 
             	            MINUS62_tree = 
@@ -2175,7 +2175,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "term"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:1: term : factor ( ( MUL ^| DIV ^| MOD ^) factor )* ;
+    // /home/pnk/cl/src/parser/Asl.g:138:1: term : factor ( ( MUL ^| DIV ^| MOD ^) factor )* ;
     public final AslParser.term_return term() throws RecognitionException {
         AslParser.term_return retval = new AslParser.term_return();
         retval.start = input.LT(1);
@@ -2196,8 +2196,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MOD67_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:9: ( factor ( ( MUL ^| DIV ^| MOD ^) factor )* )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:13: factor ( ( MUL ^| DIV ^| MOD ^) factor )*
+            // /home/pnk/cl/src/parser/Asl.g:138:9: ( factor ( ( MUL ^| DIV ^| MOD ^) factor )* )
+            // /home/pnk/cl/src/parser/Asl.g:138:13: factor ( ( MUL ^| DIV ^| MOD ^) factor )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2209,7 +2209,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, factor64.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:20: ( ( MUL ^| DIV ^| MOD ^) factor )*
+            // /home/pnk/cl/src/parser/Asl.g:138:20: ( ( MUL ^| DIV ^| MOD ^) factor )*
             loop17:
             do {
                 int alt17=2;
@@ -2222,9 +2222,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt17) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:22: ( MUL ^| DIV ^| MOD ^) factor
+            	    // /home/pnk/cl/src/parser/Asl.g:138:22: ( MUL ^| DIV ^| MOD ^) factor
             	    {
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:22: ( MUL ^| DIV ^| MOD ^)
+            	    // /home/pnk/cl/src/parser/Asl.g:138:22: ( MUL ^| DIV ^| MOD ^)
             	    int alt16=3;
             	    switch ( input.LA(1) ) {
             	    case MUL:
@@ -2252,7 +2252,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             	    switch (alt16) {
             	        case 1 :
-            	            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:23: MUL ^
+            	            // /home/pnk/cl/src/parser/Asl.g:138:23: MUL ^
             	            {
             	            MUL65=(Token)match(input,MUL,FOLLOW_MUL_in_term934); 
             	            MUL65_tree = 
@@ -2264,7 +2264,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:30: DIV ^
+            	            // /home/pnk/cl/src/parser/Asl.g:138:30: DIV ^
             	            {
             	            DIV66=(Token)match(input,DIV,FOLLOW_DIV_in_term939); 
             	            DIV66_tree = 
@@ -2276,7 +2276,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 3 :
-            	            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:138:37: MOD ^
+            	            // /home/pnk/cl/src/parser/Asl.g:138:37: MOD ^
             	            {
             	            MOD67=(Token)match(input,MOD,FOLLOW_MOD_in_term944); 
             	            MOD67_tree = 
@@ -2338,7 +2338,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "factor"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:141:1: factor : ( NOT ^| PLUS ^| MINUS ^)? atom ;
+    // /home/pnk/cl/src/parser/Asl.g:141:1: factor : ( NOT ^| PLUS ^| MINUS ^)? atom ;
     public final AslParser.factor_return factor() throws RecognitionException {
         AslParser.factor_return retval = new AslParser.factor_return();
         retval.start = input.LT(1);
@@ -2357,13 +2357,13 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MINUS71_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:141:9: ( ( NOT ^| PLUS ^| MINUS ^)? atom )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:141:13: ( NOT ^| PLUS ^| MINUS ^)? atom
+            // /home/pnk/cl/src/parser/Asl.g:141:9: ( ( NOT ^| PLUS ^| MINUS ^)? atom )
+            // /home/pnk/cl/src/parser/Asl.g:141:13: ( NOT ^| PLUS ^| MINUS ^)? atom
             {
             root_0 = (AslTree)adaptor.nil();
 
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:141:13: ( NOT ^| PLUS ^| MINUS ^)?
+            // /home/pnk/cl/src/parser/Asl.g:141:13: ( NOT ^| PLUS ^| MINUS ^)?
             int alt18=4;
             switch ( input.LA(1) ) {
                 case NOT:
@@ -2385,7 +2385,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt18) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:141:14: NOT ^
+                    // /home/pnk/cl/src/parser/Asl.g:141:14: NOT ^
                     {
                     NOT69=(Token)match(input,NOT,FOLLOW_NOT_in_factor971); 
                     NOT69_tree = 
@@ -2397,7 +2397,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:141:21: PLUS ^
+                    // /home/pnk/cl/src/parser/Asl.g:141:21: PLUS ^
                     {
                     PLUS70=(Token)match(input,PLUS,FOLLOW_PLUS_in_factor976); 
                     PLUS70_tree = 
@@ -2409,7 +2409,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:141:29: MINUS ^
+                    // /home/pnk/cl/src/parser/Asl.g:141:29: MINUS ^
                     {
                     MINUS71=(Token)match(input,MINUS,FOLLOW_MINUS_in_factor981); 
                     MINUS71_tree = 
@@ -2462,7 +2462,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "atom"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:147:1: atom : ( ident | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !);
+    // /home/pnk/cl/src/parser/Asl.g:147:1: atom : ( ident | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !);
     public final AslParser.atom_return atom() throws RecognitionException {
         AslParser.atom_return retval = new AslParser.atom_return();
         retval.start = input.LT(1);
@@ -2489,7 +2489,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_TRUE=new RewriteRuleTokenStream(adaptor,"token TRUE");
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:147:9: ( ident | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !)
+            // /home/pnk/cl/src/parser/Asl.g:147:9: ( ident | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !)
             int alt20=5;
             switch ( input.LA(1) ) {
             case ID:
@@ -2537,7 +2537,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt20) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:147:13: ident
+                    // /home/pnk/cl/src/parser/Asl.g:147:13: ident
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2552,7 +2552,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:148:13: INT
+                    // /home/pnk/cl/src/parser/Asl.g:148:13: INT
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2567,9 +2567,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:149:13: (b= TRUE |b= FALSE )
+                    // /home/pnk/cl/src/parser/Asl.g:149:13: (b= TRUE |b= FALSE )
                     {
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:149:13: (b= TRUE |b= FALSE )
+                    // /home/pnk/cl/src/parser/Asl.g:149:13: (b= TRUE |b= FALSE )
                     int alt19=2;
                     int LA19_0 = input.LA(1);
 
@@ -2588,7 +2588,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt19) {
                         case 1 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:149:14: b= TRUE
+                            // /home/pnk/cl/src/parser/Asl.g:149:14: b= TRUE
                             {
                             b=(Token)match(input,TRUE,FOLLOW_TRUE_in_atom1042);  
                             stream_TRUE.add(b);
@@ -2597,7 +2597,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:149:23: b= FALSE
+                            // /home/pnk/cl/src/parser/Asl.g:149:23: b= FALSE
                             {
                             b=(Token)match(input,FALSE,FOLLOW_FALSE_in_atom1048);  
                             stream_FALSE.add(b);
@@ -2622,7 +2622,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 149:33: -> ^( BOOLEAN[$b,$b.text] )
                     {
-                        // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:149:36: ^( BOOLEAN[$b,$b.text] )
+                        // /home/pnk/cl/src/parser/Asl.g:149:36: ^( BOOLEAN[$b,$b.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -2640,7 +2640,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:150:13: funcall
+                    // /home/pnk/cl/src/parser/Asl.g:150:13: funcall
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2655,7 +2655,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:151:13: '(' ! expr ')' !
+                    // /home/pnk/cl/src/parser/Asl.g:151:13: '(' ! expr ')' !
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2704,7 +2704,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ident"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:154:1: ident : ( ( ID '[' num_expr ']' ) -> ^( ARR ID num_expr ) | ( ID ) );
+    // /home/pnk/cl/src/parser/Asl.g:154:1: ident : ( ( ID '[' num_expr ']' ) -> ^( ARR ID num_expr ) | ( ID ) );
     public final AslParser.ident_return ident() throws RecognitionException {
         AslParser.ident_return retval = new AslParser.ident_return();
         retval.start = input.LT(1);
@@ -2728,7 +2728,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_num_expr=new RewriteRuleSubtreeStream(adaptor,"rule num_expr");
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:154:7: ( ( ID '[' num_expr ']' ) -> ^( ARR ID num_expr ) | ( ID ) )
+            // /home/pnk/cl/src/parser/Asl.g:154:7: ( ( ID '[' num_expr ']' ) -> ^( ARR ID num_expr ) | ( ID ) )
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -2758,10 +2758,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt21) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:154:9: ( ID '[' num_expr ']' )
+                    // /home/pnk/cl/src/parser/Asl.g:154:9: ( ID '[' num_expr ']' )
                     {
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:154:9: ( ID '[' num_expr ']' )
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:154:10: ID '[' num_expr ']'
+                    // /home/pnk/cl/src/parser/Asl.g:154:9: ( ID '[' num_expr ']' )
+                    // /home/pnk/cl/src/parser/Asl.g:154:10: ID '[' num_expr ']'
                     {
                     ID79=(Token)match(input,ID,FOLLOW_ID_in_ident1109);  
                     stream_ID.add(ID79);
@@ -2786,7 +2786,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: num_expr, ID
+                    // elements: ID, num_expr
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2798,7 +2798,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 154:32: -> ^( ARR ID num_expr )
                     {
-                        // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:154:35: ^( ARR ID num_expr )
+                        // /home/pnk/cl/src/parser/Asl.g:154:35: ^( ARR ID num_expr )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -2822,13 +2822,13 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:155:6: ( ID )
+                    // /home/pnk/cl/src/parser/Asl.g:155:6: ( ID )
                     {
                     root_0 = (AslTree)adaptor.nil();
 
 
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:155:6: ( ID )
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:155:7: ID
+                    // /home/pnk/cl/src/parser/Asl.g:155:6: ( ID )
+                    // /home/pnk/cl/src/parser/Asl.g:155:7: ID
                     {
                     ID83=(Token)match(input,ID,FOLLOW_ID_in_ident1135); 
                     ID83_tree = 
@@ -2873,7 +2873,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "funcall"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:1: funcall : ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) ;
+    // /home/pnk/cl/src/parser/Asl.g:158:1: funcall : ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) ;
     public final AslParser.funcall_return funcall() throws RecognitionException {
         AslParser.funcall_return retval = new AslParser.funcall_return();
         retval.start = input.LT(1);
@@ -2895,8 +2895,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_50=new RewriteRuleTokenStream(adaptor,"token 50");
         RewriteRuleSubtreeStream stream_expr_list=new RewriteRuleSubtreeStream(adaptor,"rule expr_list");
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:9: ( ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:13: ID '(' ( expr_list )? ')'
+            // /home/pnk/cl/src/parser/Asl.g:158:9: ( ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) )
+            // /home/pnk/cl/src/parser/Asl.g:158:13: ID '(' ( expr_list )? ')'
             {
             ID84=(Token)match(input,ID,FOLLOW_ID_in_funcall1147);  
             stream_ID.add(ID84);
@@ -2906,7 +2906,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_49.add(char_literal85);
 
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:20: ( expr_list )?
+            // /home/pnk/cl/src/parser/Asl.g:158:20: ( expr_list )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -2915,7 +2915,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt22) {
                 case 1 :
-                    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:20: expr_list
+                    // /home/pnk/cl/src/parser/Asl.g:158:20: expr_list
                     {
                     pushFollow(FOLLOW_expr_list_in_funcall1151);
                     expr_list86=expr_list();
@@ -2935,7 +2935,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: ID, expr_list
+            // elements: expr_list, ID
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2947,7 +2947,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 158:35: -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
             {
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:38: ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
+                // /home/pnk/cl/src/parser/Asl.g:158:38: ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -2958,14 +2958,14 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_ID.nextNode()
                 );
 
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:51: ^( ARGLIST ( expr_list )? )
+                // /home/pnk/cl/src/parser/Asl.g:158:51: ^( ARGLIST ( expr_list )? )
                 {
                 AslTree root_2 = (AslTree)adaptor.nil();
                 root_2 = (AslTree)adaptor.becomeRoot(
                 (AslTree)adaptor.create(ARGLIST, "ARGLIST")
                 , root_2);
 
-                // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:158:61: ( expr_list )?
+                // /home/pnk/cl/src/parser/Asl.g:158:61: ( expr_list )?
                 if ( stream_expr_list.hasNext() ) {
                     adaptor.addChild(root_2, stream_expr_list.nextTree());
 
@@ -3014,7 +3014,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr_list"
-    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:162:1: expr_list : expr ( ',' ! expr )* ;
+    // /home/pnk/cl/src/parser/Asl.g:162:1: expr_list : expr ( ',' ! expr )* ;
     public final AslParser.expr_list_return expr_list() throws RecognitionException {
         AslParser.expr_list_return retval = new AslParser.expr_list_return();
         retval.start = input.LT(1);
@@ -3031,8 +3031,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal89_tree=null;
 
         try {
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:162:10: ( expr ( ',' ! expr )* )
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:162:13: expr ( ',' ! expr )*
+            // /home/pnk/cl/src/parser/Asl.g:162:10: ( expr ( ',' ! expr )* )
+            // /home/pnk/cl/src/parser/Asl.g:162:13: expr ( ',' ! expr )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -3044,7 +3044,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, expr88.getTree());
 
-            // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:162:18: ( ',' ! expr )*
+            // /home/pnk/cl/src/parser/Asl.g:162:18: ( ',' ! expr )*
             loop23:
             do {
                 int alt23=2;
@@ -3057,7 +3057,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt23) {
             	case 1 :
-            	    // /home/pnkthrepwood/cl/Asl/src/parser/Asl.g:162:19: ',' ! expr
+            	    // /home/pnk/cl/src/parser/Asl.g:162:19: ',' ! expr
             	    {
             	    char_literal89=(Token)match(input,51,FOLLOW_51_in_expr_list1190); 
 
