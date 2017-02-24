@@ -341,6 +341,16 @@ public class Interp {
         // Atoms
         switch (type) 
 		{
+			//An array access
+			case AslLexer.ARR:
+				value = new Data(
+					Stack.getArrayVar(
+						t.getChild(0).getText(), 
+						evaluateExpression(t.getChild(1)).getIntegerValue()
+					)
+				);
+				break;
+
             // A variable
             case AslLexer.ID:
                 value = new Data(Stack.getVariable(t.getText()));

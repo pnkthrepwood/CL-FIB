@@ -13,34 +13,54 @@ digraph {
   n3 [label="PARAMS"];
   n4 [label="LIST_INSTR"];
   n4 [label="LIST_INSTR"];
-  n5 [label=":="];
-  n5 [label=":="];
-  n6 [label="ARR"];
-  n6 [label="ARR"];
-  n7 [label="x"];
-  n8 [label="+"];
-  n8 [label="+"];
+  n5 [label="write"];
+  n5 [label="write"];
+  n6 [label="\"ola senyor __ \""];
+  n7 [label=":="];
+  n7 [label=":="];
+  n8 [label="x"];
   n9 [label="1"];
-  n10 [label="1"];
-  n11 [label="2"];
+  n10 [label="write"];
+  n10 [label="write"];
+  n11 [label="x"];
   n12 [label=":="];
   n12 [label=":="];
-  n13 [label="x"];
-  n14 [label="2"];
+  n13 [label="ARR"];
+  n13 [label="ARR"];
+  n14 [label="x"];
+  n15 [label="+"];
+  n15 [label="+"];
+  n16 [label="1"];
+  n17 [label="1"];
+  n18 [label="2"];
+  n19 [label="write"];
+  n19 [label="write"];
+  n20 [label="ARR"];
+  n20 [label="ARR"];
+  n21 [label="x"];
+  n22 [label="2"];
 
   n0 -> n1 // "LIST_FUNCTIONS" -> "func"
   n1 -> n2 // "func" -> "main"
   n1 -> n3 // "func" -> "PARAMS"
   n1 -> n4 // "func" -> "LIST_INSTR"
-  n4 -> n5 // "LIST_INSTR" -> ":="
-  n5 -> n6 // ":=" -> "ARR"
-  n6 -> n7 // "ARR" -> "x"
-  n6 -> n8 // "ARR" -> "+"
-  n8 -> n9 // "+" -> "1"
-  n8 -> n10 // "+" -> "1"
-  n5 -> n11 // ":=" -> "2"
+  n4 -> n5 // "LIST_INSTR" -> "write"
+  n5 -> n6 // "write" -> "\"ola senyor __ \""
+  n4 -> n7 // "LIST_INSTR" -> ":="
+  n7 -> n8 // ":=" -> "x"
+  n7 -> n9 // ":=" -> "1"
+  n4 -> n10 // "LIST_INSTR" -> "write"
+  n10 -> n11 // "write" -> "x"
   n4 -> n12 // "LIST_INSTR" -> ":="
-  n12 -> n13 // ":=" -> "x"
-  n12 -> n14 // ":=" -> "2"
+  n12 -> n13 // ":=" -> "ARR"
+  n13 -> n14 // "ARR" -> "x"
+  n13 -> n15 // "ARR" -> "+"
+  n15 -> n16 // "+" -> "1"
+  n15 -> n17 // "+" -> "1"
+  n12 -> n18 // ":=" -> "2"
+  n4 -> n19 // "LIST_INSTR" -> "write"
+  n19 -> n20 // "write" -> "ARR"
+  n20 -> n21 // "ARR" -> "x"
+  n20 -> n22 // "ARR" -> "2"
 
 }

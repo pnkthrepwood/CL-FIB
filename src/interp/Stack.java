@@ -45,7 +45,7 @@ public class Stack
     private LinkedList<HashMap<String,Data>> Stack;
 
     /** Reference to the current activation record */
-    private HashMap<String,Data> CurrentAR = null;
+    private HashMap<String, Data> CurrentAR = null;
 
     /**
      * Class to represent an item of the Stack trace.
@@ -93,11 +93,23 @@ public class Stack
      * @param name The name of the variable
      * @param value The value of the variable
      */
-    public void defineVariable(String name, Data value) {
+    public void defineVariable(String name, Data value) 
+	{
         Data d = CurrentAR.get(name);
         if (d == null) CurrentAR.put(name, value); // New definition
         else d.setData(value); // Use the previous data 
     }
+
+
+	public Data getArrayVar(String name, int idx)
+	{
+		Data v = CurrentAR.get(name+"%"+idx);
+		if (v == null)
+		{
+			v = new Data(0);
+		}
+		return v;
+	}
 
     /** Gets the value of the variable. The value is represented as
      * a Data object. In this way, any modification of the object
@@ -105,7 +117,8 @@ public class Stack
      * @param name The name of the variable
      * @return The value of the variable
      */
-    public Data getVariable(String name) {
+    public Data getVariable(String name) 
+	{
         Data v = CurrentAR.get(name);
         if (v == null) {
             throw new RuntimeException ("Variable " + name + " not defined");

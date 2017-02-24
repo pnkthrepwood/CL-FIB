@@ -74,11 +74,13 @@ public class Data
     /** Indicates whether the data is void */
     public boolean isVoid() { return type == Type.VOID; }
 
+
     /**
      * Gets the value of an integer data. The method asserts that
      * the data is an integer.
      */
-    public int getIntegerValue() {
+    public int getIntegerValue() 
+	{
         assert type == Type.INTEGER;
         return value;
     }
