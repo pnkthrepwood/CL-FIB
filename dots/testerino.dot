@@ -15,42 +15,35 @@ digraph {
   n4 [label="LIST_INSTR"];
   n5 [label=":="];
   n5 [label=":="];
-  n6 [label="x"];
-  n7 [label="1"];
-  n8 [label=":="];
-  n8 [label=":="];
-  n9 [label="ARR"];
-  n9 [label="ARR"];
-  n10 [label="x"];
-  n11 [label="+"];
-  n11 [label="+"];
-  n12 [label="1"];
-  n13 [label="1"];
-  n14 [label="2"];
-  n15 [label="write"];
-  n15 [label="write"];
-  n16 [label="ARR"];
-  n16 [label="ARR"];
-  n17 [label="x"];
-  n18 [label="2"];
+  n6 [label="ARR"];
+  n6 [label="ARR"];
+  n7 [label="x"];
+  n8 [label="+"];
+  n8 [label="+"];
+  n9 [label="1"];
+  n10 [label="1"];
+  n11 [label="2"];
+  n12 [label="write"];
+  n12 [label="write"];
+  n13 [label="ARR"];
+  n13 [label="ARR"];
+  n14 [label="x"];
+  n15 [label="2"];
 
   n0 -> n1 // "LIST_FUNCTIONS" -> "func"
   n1 -> n2 // "func" -> "main"
   n1 -> n3 // "func" -> "PARAMS"
   n1 -> n4 // "func" -> "LIST_INSTR"
   n4 -> n5 // "LIST_INSTR" -> ":="
-  n5 -> n6 // ":=" -> "x"
-  n5 -> n7 // ":=" -> "1"
-  n4 -> n8 // "LIST_INSTR" -> ":="
-  n8 -> n9 // ":=" -> "ARR"
-  n9 -> n10 // "ARR" -> "x"
-  n9 -> n11 // "ARR" -> "+"
-  n11 -> n12 // "+" -> "1"
-  n11 -> n13 // "+" -> "1"
-  n8 -> n14 // ":=" -> "2"
-  n4 -> n15 // "LIST_INSTR" -> "write"
-  n15 -> n16 // "write" -> "ARR"
-  n16 -> n17 // "ARR" -> "x"
-  n16 -> n18 // "ARR" -> "2"
+  n5 -> n6 // ":=" -> "ARR"
+  n6 -> n7 // "ARR" -> "x"
+  n6 -> n8 // "ARR" -> "+"
+  n8 -> n9 // "+" -> "1"
+  n8 -> n10 // "+" -> "1"
+  n5 -> n11 // ":=" -> "2"
+  n4 -> n12 // "LIST_INSTR" -> "write"
+  n12 -> n13 // "write" -> "ARR"
+  n13 -> n14 // "ARR" -> "x"
+  n13 -> n15 // "ARR" -> "2"
 
 }
